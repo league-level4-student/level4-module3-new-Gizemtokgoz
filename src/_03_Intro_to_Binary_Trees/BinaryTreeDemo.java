@@ -1,7 +1,7 @@
 package _03_Intro_to_Binary_Trees;
 
-public class BinaryTreeDemo {
-
+public class BinaryTreeDemo<T extends Comparable<T>> {
+	private Node<T> root;
     /*
      * A Binary Tree is a data structure that makes use of nodes and references
      * like a LinkedList, but instead of the nodes pointing to a previous node
@@ -32,8 +32,12 @@ public class BinaryTreeDemo {
      * 
      */
 
-    public static void main(String[] args) {
-
+    public void main(String[] args) {
+    	root = recursiveInsert(root, args);
     }
+	private Node<T> recursiveInsert(Node<T> root2, String[] args) {
+		// TODO Auto-generated method stub
+		return null;
+	}
 
 }

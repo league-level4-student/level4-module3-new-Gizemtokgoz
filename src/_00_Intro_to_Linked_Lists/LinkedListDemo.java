@@ -1,8 +1,10 @@
 package _00_Intro_to_Linked_Lists;
 
-public class LinkedListDemo {
+public class LinkedListDemo<T> {
 
-    public static void main(String[] args) {
+	private Node<T> food;
+	
+    public void main(String[] args) {
 
         /*
          * A LinkedList is a linear data structure, but unlike an ArrayList or
@@ -31,7 +33,8 @@ public class LinkedListDemo {
          * String nodes.
          * 
          */
-
+    	Node<T> prev = food;
+    	prev.setNext();
     }
 
 }
