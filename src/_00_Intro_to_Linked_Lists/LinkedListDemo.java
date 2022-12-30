@@ -1,8 +1,6 @@
 package _00_Intro_to_Linked_Lists;
 
 public class LinkedListDemo<T> {
-
-	private Node<T> food;
 	
     public void main(String[] args) {
 
@@ -33,8 +31,13 @@ public class LinkedListDemo<T> {
          * String nodes.
          * 
          */
-    	Node<T> prev = food;
-    	prev.setNext();
+    	LinkedList<String> ll = new LinkedList<>();
+    	
+    	Node<String> head = ll.getHead();
+    	Node<String> tail = ll.getTail();
+    	
+    	ll.add(head);
+    	ll.remove(tail);
     }
 
 }
