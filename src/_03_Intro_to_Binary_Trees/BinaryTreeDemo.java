@@ -31,9 +31,27 @@ public class BinaryTreeDemo<T extends Comparable<T>> {
      * if it worked.
      * 
      */
+	public static void main(String[] args) {
+		new BinaryTreeDemo().main2(args);
+	}
 
-    public void main(String[] args) {
+    public void main2(String[] args) {
+    	BinaryTree<Integer> bit = new BinaryTree<Integer>();
     	root = recursiveInsert(root, args);
+    	
+    	bit.insert(2);
+    	bit.insert(4);
+    	bit.insert(6);
+    	bit.insert(9);
+    	bit.insert(13);
+//    	bit.search(6);
+//    	bit.delete(2);
+    	bit.printHorizontal();
+    	bit.printVertical();
+    	
+    	for (int i = 0; i < args.length; i++) {
+			
+		}
     }
 	private Node<T> recursiveInsert(Node<T> root2, String[] args) {
 		// TODO Auto-generated method stub
